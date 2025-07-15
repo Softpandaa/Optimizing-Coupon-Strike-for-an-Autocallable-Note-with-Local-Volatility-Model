@@ -34,11 +34,11 @@ This repository contains the methodology and implementation for optimizing coupo
 # Code Structure
 1. main.ipynb: The main script to configure input settings for the volatility surface, simulate correlated paths, and run the pricing algorithm
 2. VolSurfaceFunctions.py:
-   - get_r_func: Interpolate a continuous risk-free rate curve
-   - get_processed_data: Process raw data and return processed option chains of different maturity
-   - get_vol_sur_M_all: Fit the volatility curve
-   - get_loc_vol_sur_M_all: Fit the local volatility curve
+   - `get_r_func`: Interpolate a continuous risk-free rate curve
+   - `get_processed_data`: Process raw data and return processed option chains of different maturity
+   - `get_vol_sur_M_all`: Fit the volatility curve
+   - `get_loc_vol_sur_M_all`: Fit the local volatility curve
 
 # Dependencies
 - Python 3.8+
-- Required libraries: pandas, numpy, finance, functools, matplotlib, scipy
+- Required libraries: `pandas`, `numpy`, `yfinance`, `functools`, `matplotlib`, `scipy`
