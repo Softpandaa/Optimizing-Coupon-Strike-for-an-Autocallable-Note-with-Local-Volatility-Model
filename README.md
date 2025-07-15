@@ -30,10 +30,15 @@ This repository contains the methodology and implementation for optimizing coupo
 4. **Final Redemption** (At maturity if not knocked out)
    - No knock-in: 100% principal
    - Knock-in occurred: Principal × min⁡(100%, S<sub>T</sub>/S<sub>0</sub> of laggard)
-
+<br />
 # Code Structure
-1. main.ipynb: The main script to run pricing examples and configure input settings for the autocallable note
+1. main.ipynb: The main script to configure input settings for the volatility surface, simulate correlated paths, and run the pricing algorithm
 2. VolSurfaceFunctions.py:
-   - Process the data
-   - Define the local volatility model
-   - Fit the volatility surface
+   - get_r_func: Interpolate a continuous risk-free rate curve
+   - get_processed_data: Process raw data and return processed option chains of different maturity
+   - get_vol_sur_M_all: Fit the volatility curve
+   - get_loc_vol_sur_M_all: Fit the local volatility curve
+
+# Dependencies
+- Python 3.8+
+- Required libraries: pandas, numpy, finance, functools, matplotlib, scipy
