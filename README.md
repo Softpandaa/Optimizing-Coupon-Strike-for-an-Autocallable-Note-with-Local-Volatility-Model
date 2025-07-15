@@ -30,3 +30,10 @@ This repository contains the methodology and implementation for optimizing coupo
 4. **Final Redemption** (At maturity if not knocked out)
    - No knock-in: 100% principal
    - Knock-in occurred: Principal × min⁡(100%, S<sub>T</sub>/S<sub>0</sub> of laggard)
+
+# Code Structure
+1. main.ipynb: The main script to run pricing examples and configure input settings for the autocallable note
+2. VolSurfaceFunctions.py:
+   - Process the data
+   - Define the local volatility model
+   - Fit the volatility surface
